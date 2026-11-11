@@ -123,13 +123,13 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 </div>
 
 <script>
-const LAST_SYNC="8 nov 2026";
+const LAST_SYNC="10 nov 2026";
 const RAW=[
 ["2026-07-02","Recuperatorio?"],["2026-07-06","Final Adelantado"],["2026-07-13","Final Regular"],["2026-07-21","Final Regular"],["2026-07-23","Final regular"],
 ["2026-08-18","Entrega TP1"],["2026-08-24","Entrega Tp1 Dis. Corp."],["2026-08-28","Entrega TP1"],
 ["2026-09-01","Parcial 1"],["2026-09-02","Presentacion Manz 66"],["2026-09-21","Entrega Tp2 Dis. Corp."],["2026-09-22","Entrega Tp2"],["2026-09-23","Entrega TP1"],["2026-09-24","Parcial 1"],
 ["2026-10-06","Pre entrega CONCURSO"],["2026-10-07","Parcial"],["2026-10-09","Entrega TP2"],["2026-10-26","Entrega Tp3 Dis. Corp."],["2026-10-27","Parcial 2"],
-["2026-11-12","Exposicion TP Grupal"],["2026-11-17","Entrega Tp2 y concurso"],["2026-11-18","Entrega TP2"],["2026-11-19","Parcial 2"],["2026-11-20","Entrega TP3"],["2026-11-24","entrega final - recu"],
+["2026-11-10","Plan de Accion 10/11"],["2026-11-11","Preentrega Dis. Paisaje"],["2026-11-13","Preentrega Arquigrafico"],["2026-11-17","Entrega Tp2 y concurso"],["2026-11-18","Entrega TP2"],["2026-11-19","Parcial 2"],["2026-11-19","Entrega TP Grupal"],["2026-11-20","Entrega TP3"],["2026-11-24","entrega final - recu"],
 ["2026-11-25","Final Adelantado - Recu"],["2026-11-26","Final Adelantado - Recu"],["2026-11-27","Final Adelantado - Recu"],["2026-11-30","Entrega. Tp Final Dis. Corp."],
 ["2026-12-09","Final Regular"],["2026-12-11","Final Regular"],["2026-12-15","Final Regular"],["2026-12-17","Final Regular"],["2026-12-21","Final Reg. Dis. Corp."]
 ];
@@ -186,8 +186,8 @@ function agenda(){
     <div class="t"><span class="tag ${e.k}">${KL[e.k]}</span>${esc(e.t)}</div><div class="k">${n===0?"hoy":n===1?"mañana":"en "+n+" d"}</div></li>`}).join("");
 }
 const PLAN=[
- {t:"Esta semana",r:"9 al 15 nov",items:["Jue 12: exposición del TP grupal. Ensayala el miércoles.","Avanzá lo de la semana siguiente: es la más cargada."]},
- {t:"Semana crítica",r:"16 al 22 nov",crit:1,items:["Mar 17: entrega TP2 y concurso.","Mié 18: entrega TP2.","Jue 19: Parcial 2.","Vie 20: entrega TP3.","Cuatro fechas en cuatro días. Cerrá entregas el fin de semana del 14-15 y estudiá el parcial en paralelo."]},
+ {t:"Esta semana",r:"10 al 15 nov",items:["Mar 10: plan de acción.","Mié 11: preentrega de Dis. Paisaje.","Vie 13: preentrega de Arquigráfico.","Avanzá lo de la semana siguiente: es la más cargada."]},
+ {t:"Semana crítica",r:"16 al 22 nov",crit:1,items:["Mar 17: entrega TP2 y concurso.","Mié 18: entrega TP2.","Jue 19: Parcial 2 y entrega del TP grupal.","Vie 20: entrega TP3.","Cuatro fechas en cuatro días. Cerrá entregas el fin de semana del 14-15 y estudiá el parcial en paralelo."]},
  {t:"Recuperatorios",r:"23 al 29 nov",items:["Mar 24: entrega final - recu.","25, 26 y 27: finales adelantados / recu.","Definí cuáles rendís y reservá un día de estudio para cada uno."]},
  {t:"Cierre de cursada",r:"30 nov al 6 dic",items:["Lun 30: entrega del TP final de Dis. Corp.","El resto de la semana, estudiá para los finales regulares."]},
  {t:"Finales regulares",r:"7 al 21 dic",items:["Mié 9, vie 11, mar 15 y jue 17: finales regulares.","Lun 21: final regular de Dis. Corp.","Entre fechas, repaso liviano; no abras un tema nuevo el día anterior."]}
